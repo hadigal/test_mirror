@@ -1,29 +1,8 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+# This repo is created to test the mirroring functionality in git #
+- Create a directory.
+- clone the repo you want to mirror e.g. for bitbucket to github
+  * run the following cmd from the repo: `git clone --mirror https://<username>@bitbucket.org/<username>/<director>.git`/
+  * move to the cloned repo and run the following cmd:
+    - `git remote set-url --push origin https://github.com/<username>/<directory>.git`
+  * Now push: `git push --mirror`
+- login to the github UI you will notice bitbucket repo with commits on github
